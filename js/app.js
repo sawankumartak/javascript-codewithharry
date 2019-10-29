@@ -1,0 +1,10 @@
+console.time('this code time ');
+console.log("hello world");
+// document.write("hi");
+console.log(34+65);
+console.log(35);
+console.log(true);
+console.table([35,54,85]);
+console.table({harry : 'this', marks : 35});
+console.timeEnd('this code time ');
+console.error("please make another choice");
