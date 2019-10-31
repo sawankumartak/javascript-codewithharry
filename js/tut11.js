@@ -48,10 +48,34 @@
 // elem = elem.innerHTML;
 // console.log(elem);
 
-// let elems = document.getElementsByClassName('div');
-elems = document.getElementsByTagName('div');
-// console.log(elems);
-Array.from(elems).forEach(element => {
-  console.log(elems);
-  element.style.color = 'blue';
-});
+// // let elems = document.getElementsByClassName('div');
+// elems = document.getElementsByTagName('div');
+// // console.log(elems);
+// Array.from(elems).forEach(element => {
+//   console.log(elems);
+//   element.style.color = 'blue';
+// });
+
+// let container = document.querySelector('.container');
+// console.log(container.children);
+// console.log(container.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling); 
+// console.log(container.nextElementSibling); 
+
+// let heading = document.createElement('h2');
+// let txt = document.createTextNode("Go to code with harry");
+// heading.append(txt);
+// heading.id = 'harrylink';
+// console.log(heading);
+// let link = document.createElement('a');
+// link.setAttribute = ('href',"http://www.codewithharry.com");
+
+// document.getElementById('heading').addEventListener('click',function(e){
+//   console.log("you clicked");
+//   variable = e.target;
+//   console.log(variable);
+// })
+
+document.getElementById('container').addEventListener('mousemove',function(e){
+  document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},128)`;
+})
+
